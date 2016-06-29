@@ -2,6 +2,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "projects";
+@import "responsive";
 
 header {
   @extend .page-header;
@@ -11,19 +12,11 @@ header {
   &:first-child {
     margin-top: 20px;
   }
-  h1,h2,h3,h4,h5,h6{
-    max-width: 55%;
-  }
 }
 
 ul.actions {
   @extend .list-unstyled;
   @extend .list-inline;
-  position:absolute;
-  bottom:-2px;
-  right:2px;
-  max-width: 45%;
-  text-align: right;
 }
 
 a.new,a.edit,a.delete {
@@ -60,6 +53,12 @@ a.delete {
 .alert-alert {
   @extend .alert-danger;
 }
+form {
+  max-width: 500px;
+  }
+  body{
+    padding-top: 70px;
+  }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
