@@ -15,5 +15,5 @@
 
 %ul#tickets
   =@project.tickets.each do |ticket|
-    %li{:id => "ticket.id"}
+    %li#ticket.id
       = link_to ticket.name, [@project, ticket]
